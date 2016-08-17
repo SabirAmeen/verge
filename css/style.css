@@ -1,0 +1,60 @@
+body
+{
+	margin:0;
+	height:0;
+}
+.main-head
+{
+	height: 60px;
+	margin:0;
+	width:100%;
+	background-color: #fa4b2a;
+	text-align:center;
+}
+.logo
+{
+	height:100%;
+	width:11rem;
+	float:left;
+	
+}
+.menu
+{
+	height:100%;
+	width:3rem;
+	float:left;
+	vertical-align: middle;
+}
+.menu img
+{
+	height:auto;
+	width:1.5rem;
+	margin-top:17px;
+}
+.logo img
+{
+	height:auto;
+	width:9rem;
+	margin-top:10px;
+	float:left;
+}
+.article-toggle
+{
+	margin-top:5px;
+	float:right;
+	color:white;
+	width:5rem;
+	height:3.2rem;
+	margin-bottom:5px;
+	border-left:1px solid white;
+}
+.article-toggle strong
+{
+	display: block;
+	font-size:2rem;
+}
+.article-toggle em
+{
+	font-size:0.7rem;
+	margin-left:0.1rem;
+}
