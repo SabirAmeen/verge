@@ -2,6 +2,12 @@ body
 {
 	margin:0;
 	height:0;
+	font-family: ff-din-web-condensed,Helvetica,Arial,sans-serif;
+}
+a
+{
+	text-decoration: none;
+	color:black;
 }
 .main-head
 {
@@ -21,7 +27,7 @@ body
 .menu
 {
 	height:100%;
-	width:3rem;
+	width:3.5rem;
 	float:left;
 	vertical-align: middle;
 }
@@ -44,17 +50,111 @@ body
 	float:right;
 	color:white;
 	width:5rem;
+	padding-right:0.3rem; 
+	padding-left: 0.1rem;
 	height:3.2rem;
 	margin-bottom:5px;
 	border-left:1px solid white;
+	font-weight: bold;
 }
 .article-toggle strong
 {
 	display: block;
-	font-size:2rem;
+	font-size:1.8rem;
 }
 .article-toggle em
 {
-	font-size:0.7rem;
+	font-size:0.6rem;
 	margin-left:0.1rem;
+}
+.nav-bar
+{
+	position: fixed;
+	left:0px;
+	top:0px;
+	height:100%;
+	background-color:black;
+	color:white;
+	transition:0.2s;
+	width:0px;
+	overflow:auto;
+	overflow-x: none;
+	font-size:0.8rem;
+
+}
+.transparent-nav
+{
+	width:0px;
+	height:100%;
+	position: fixed;
+	top:0;
+	left:0;
+	background-color: black;
+	opacity:0.5;
+	transition:0.2s;
+}
+.transparent-art
+{
+	width:0px;
+	height:100%;
+	position: fixed;
+	top:0;
+	right:0;
+	background-color: black;
+	opacity:0.5;
+	transition:0.2s;
+}
+.nav-list
+{
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+.user-login
+{
+	float:right;
+	margin-right:10px;
+}
+.nav-list li
+{
+	padding: 0.7rem;
+	border-bottom: 0.5px ridge #FFF;
+}
+.nav-list li img
+{	width:50px;
+	height:50px;
+}
+.updated-articles
+{
+	position: fixed;
+	top:0;
+	right:0;
+	height:100%;
+	width:0;
+	float:right;
+	background-color: white;
+	transition: 0.2s;
+}
+.article-new
+{
+	padding-bottom:0.8rem;
+}
+.article-list
+{
+	list-style: none;
+	margin:0;
+	padding-bottom: 1rem;
+	padding-left: 1rem;
+}
+.list-date
+{
+	background-color: #fa4b2a;
+	color:white;
+	width:9rem;
+	margin-left:1rem;
+
+}
+.article-list li
+{
+	padding-top:0.4rem;
 }
