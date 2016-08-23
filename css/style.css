@@ -45,6 +45,11 @@ a
 	margin-top:10px;
 	float:left;
 }
+#trending-dropdown
+{
+	display: none;
+	background-color:#f0f0f0;
+}
 .article-toggle
 {
 	margin-top:5px;
@@ -284,6 +289,7 @@ a
 	overflow-x: scroll;
 	overflow-y: hidden;
 	width:100%;
+	height:172px;
 	font-size:0;
 }
 .article-scroller h2
@@ -294,6 +300,7 @@ a
 .article-scroller div
 {
 	width:80%;
+	height: 172px;
 }
 #important-art-four
 {
@@ -385,17 +392,243 @@ a
 {
 	font-size:0.8rem;
 }
-#entry-left
+#entry-left, #entry-center, #entry-right
 {
 	display: none;
 }
-#entry-center
+#back-to-top
+{
+	width: 100%;
+	height:30px;
+	padding:0.8rem 0;
+	text-align: center;
+	color:white;
+	vertical-align: middle;
+	background-color: #555;
+	font-size: 1rem;
+	font-weight:700;
+	line-height: 1.8;
+}
+#foot
+{
+	background-color: black;
+	color:#999;
+	font-family: Adelle,Georgia,serif;
+	padding: 2rem 0rem;
+	position: relative;
+}
+#foot a
+{
+	color:#999;
+	font-size:1.2rem;
+	font-weight: 400;
+}
+#foot-logo
 {
 	display: none;
 }
-#entry-right
+#search-form-foot
+{
+	width:100%;
+	padding:1rem 0.5rem;
+	text-align: center;
+	line-height:2.5;
+	box-sizing: border-box;
+}
+#search-foot
+{
+	width:80%;
+	height: 40px;
+	padding: 0.5rem;
+	font-size:1.2rem;
+	box-shadow: inset 0 0 15px 0 rgba(0,0,0,0.1);
+}
+#foot-nav-head
 {
 	display: none;
+	font-size:1rem;
+}
+#foot-nav-head a
+{
+	color:#fa4b2a;
+	font-style: italic;
+	font-size: 1rem;
+}
+#left-foot-nav
+{
+	list-style: none;
+	display: inline-block;
+	width: 50%;
+	padding: 0;
+}
+#left-foot-nav li
+{
+	padding-left: 1.5rem;
+	padding-bottom: 0.5rem;
+}
+#center-foot-nav 
+{
+	list-style: none;
+	padding:0;
+	width: 47%;
+	display: inline-block;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+#center-foot-nav li
+{
+	padding-right: 2rem;
+	padding-bottom: 0.5rem;
+}
+#right-foot-nav
+{
+	display:none;
+}
+#foot-icons
+{
+	width:80%;
+	list-style: none;
+	text-align: center;
+}
+#foot-icons li
+{
+	margin-right:0.5rem;
+	background-color: white;
+	display: inline-block;
+}
+#foot-icons img
+{
+	width: 25px;
+	height:25px;
+	margin:3px;
+}
+#terms
+{
+	display: none;
+	margin-left:18px;
+}
+#terms a
+{
+	color:#fa4b2a;
+	font-size: 0.9rem;
+}
+#terms p
+{
+	margin:0;
+}
+#copyrights
+{
+	width:100%;
+	text-align: center;
+	display: inline-block;
+}
+#copyrights p
+{
+	font-family: 'Baloo Da', cursive;
+	font-size:1.8rem;
+	color:white;
+	margin-bottom:2px;
+}
+#copyrights img
+{
+	width:25px;
+	height:25px;
+	transform: rotateZ(90deg);
+	margin-bottom: 8px;
+}
+#copyrights a
+{
+	color:#fa4b2a;
+}
+#copyrights span
+{
+	margin-bottom: 5px;
+	color:white;
+}
+@media screen and (min-width: 500px)
+{
+	#left-foot-nav
+	{
+		width:30%;
+	}
+	#center-foot-nav
+	{
+		width:30%;
+	}
+	#right-foot-nav
+	{
+		width:30%;
+		display: inline-block;
+		list-style: none;
+		padding:0;
+		box-sizing: border-box;
+		vertical-align: top;
+	}
+	#right-foot-nav li
+	{
+		padding-bottom: 0.5rem;
+	}
+	#foot-icons
+	{
+		display: none;
+	}
+}
+@media screen and (min-width: 600px)
+{
+	#back-to-top
+	{
+		display: none;
+	}
+	#foot-nav-head
+	{
+		display: block;
+	}
+	#search-form-foot
+	{
+		width:30%;
+		display: inline-block;
+		vertical-align: top;
+	}
+	#foot-logo
+	{
+		display:block;
+		width:100%;
+		height:50px;
+		margin-bottom: 10px;
+	}
+	#search-foot
+	{
+		width:90%;
+	}
+	#left-foot-nav
+	{
+		width:23%;
+	}
+	#center-foot-nav
+	{
+		width:23%;
+	}
+	#right-foot-nav
+	{
+		width:22%;
+	}
+	#terms
+	{
+		display: inline-block;
+		width:16rem;
+		font-size: 0.9rem;
+		font-weight: 400;
+	}
+	#copyrights
+	{
+		width:20rem;
+		display: inline-block;
+		float: right;
+	}
+	#copyrights p
+	{
+		margin:0;
+	}
 }
 @media screen and (min-width: 700px)
 {	
@@ -417,10 +650,25 @@ a
 	}
 	#trending-stories
 	{
-		width:50%;
 		background-color: white;
 		height:60px;
-		float:left;
+		position: relative;
+		display: block;
+		margin-left:208px;
+		margin-right: 143px;
+	}
+	#trending-dropdown-btn
+	{
+		display: block;
+		position: absolute;
+		right:84px;
+		top:0;
+		height:60px;
+		width:60px;
+		background-image:url("../images/dropdown.png");
+		background-position: center;
+		background-size: 20px 20px;
+		background-repeat: no-repeat;
 	}
 	#entry-mobile
 	{
