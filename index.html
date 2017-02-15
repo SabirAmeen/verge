@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Baloo+Da" rel="stylesheet">
     <link rel="icon" type="image/ico" href="images/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 </head>
 
 <body>
@@ -21,10 +22,10 @@
         <span class="logo">
             <a href=""><img id="verge-logo" src="images/logo.png" alt="verge-logo"></a>
         </span>
-        <div class="article-toggle">
+        <span class="article-toggle">
             <strong>11</strong>
             <em>NEW ARTICLES</em>
-        </div>
+        </span>
         <section id="trending-stories" class="hidden">
             <a href="">
                 <p>TRENDING NOW</p>
@@ -41,7 +42,7 @@
             <span id="dropdown-arrow">&#x25BC;</span>
         </span>
     </header>
-    <nav class="nav-bar">
+    <nav class="nav-bar hidden">
         <ul class="nav-list">
             <li><img src="https://cdn0.vox-cdn.com/images/verge/default-avatar.v9899025.gif" alt="user-image">
                 <p class="user-login">LOG IN | SIGN UP</p>
@@ -148,12 +149,56 @@
             </article>
         </section>
     </section>
-    <section id="video-section">
+    <section id="video-section" class="hidden">
         <div class="video-title-section">
-            <h3 id="video-title">
-    				TOP HOME SMART LIGHTS
-    			</h3>
+            <span id="video-title">
+    				TOP UNIVERSAL REMOTE
+    				<a href="">WATCH NOW</a>
+    			</span>
+    			<span id="see-more">
+    				SEE MORE
+    				<a href="">VIDEOS</a>
+    			</span>
         </div>
+        <section id="main-video">       	
+        	<p>The best universal remote you can buy</p>
+        </section>
+        <section id="playlist">
+        	<ul>
+        	<li id="video-one">
+        		<div id="video-one-image" class="video-props">
+        		</div>
+          			<p>The best smart lights you can buy</p>
+        	</li>
+        	<li id="video-two">
+        		<div id="video-two-image" class="video-props">
+        		</div>
+        		<span>
+        			<p>Huawei’s Honor 8 smartphone first look</p>
+        		</span>
+        	</li>
+        	<li id="video-three">
+        		<div id="video-three-image" class="video-props">
+        		</div>
+        		<span>
+        			<p>Samsung Galaxy Note 7 review</p>
+        		</span>
+        	</li>
+        	<li id="video-four">
+        		<div id="video-four-image" class="video-props">
+        		</div>
+        		<span>
+        			<p>The best wireless headphones for working out</p>
+        		</span>
+        	</li>
+        	<li id="video-five">
+        		<div id="video-five-image" class="video-props">
+        		</div>
+        		<span>
+        			<p>The best turntable you can buy</p>
+        		</span>
+        	</li>
+        </section>
     </section>
     <section id="entry-section-one">
         <section id="entry-left" class="hidden">
@@ -251,13 +296,11 @@
         </ul>
     </section>
     <footer>
-        <div id="back-to-top" onclick="location.href='';">
-            <a href="">BACK TO TOP</a>
-        </div>
+        <a id="back-to-top" href="#">BACK TO TOP</a>
         <section class="foot">
             <div id="search-form-foot">
                 <img id="foot-logo" class="hidden" src="images/verge-logo.png" alt="verge logo white">
-                <input type="text" id="search-foot" placeholder="Search articles & products" />
+                <input type="text" id="search-foot" placeholder="Search articles &amp; products" />
             </div>
             <ul id="left-foot-nav">
                 <li class="foot-nav-head hidden">
@@ -294,7 +337,7 @@
                     <a href="">Business</a>
                 </li>
                 <li>
-                    <a href="">US & World</a>
+                    <a href="">US &amp; World</a>
                 </li>
             </ul>
             <ul id="center-foot-nav">
